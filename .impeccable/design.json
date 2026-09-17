@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "mode": "persuade",
+  "world": "Lab notebook for commercialization",
+  "artifact": "labnote",
+  "tokens": {
+    "color": {
+      "bg": "#edf5f4",
+      "ink": "#102d40",
+      "muted": "#53707a",
+      "line": "#a9c2c4",
+      "panel": "#dcebea",
+      "accent": "#83b936",
+      "inverse": "#12384a",
+      "inverseInk": "#eff8f4"
+    },
+    "typography": {
+      "display": "Noto Serif Thai",
+      "body": "Noto Sans Thai",
+      "utility": "system monospace"
+    },
+    "spacing": {
+      "page": "clamp(18px, 5vw, 76px)",
+      "section": "clamp(67px, 10vw, 144px)"
+    },
+    "shape": {
+      "radius": "world-specific",
+      "elevation": "one deliberate surface system"
+    }
+  }
+}
