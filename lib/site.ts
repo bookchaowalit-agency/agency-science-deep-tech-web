@@ -21,6 +21,7 @@ export const site = {
   "status": "target",
   "design": {
     "projectName": "solo-agency-science-deep-tech",
+    "productionUrl": "https://solo-agency-science-deep-tech.vercel.app",
     "archetype": "labnote",
     "motif": "labnote",
     "world": "Lab notebook for commercialization",
