@@ -1,7 +1,7 @@
 :root {
   --bg: #edf5f4;
   --ink: #102d40;
-  --muted: #53707a;
+  --muted: #4f6a74;
   --line: #a9c2c4;
   --panel: #dcebea;
   --accent: #83b936;
@@ -18,7 +18,6 @@ html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); background: var(--bg); font-family: var(--sans); }
 ::selection { color: var(--inverse-ink); background: var(--accent); }
 a { color: inherit; }
-a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .skip-link { position: fixed; z-index: 10; top: 8px; left: 8px; padding: 9px 12px; color: var(--inverse-ink); background: var(--inverse); transform: translateY(-160%); }
 .skip-link:focus { transform: translateY(0); }
 .site-shell { min-height: 100vh; overflow: hidden; background: var(--bg); }
