@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import SiteLinks from '@/components/site-links';
+import SiteLinks, { hubHref } from '@/components/site-links';
 import { readinessCopy } from '@/lib/readiness';
 import { site } from '@/lib/site';
 import { pseoService, type PseoService } from '@/lib/pseo';
@@ -30,7 +30,7 @@ function structuredData(service: PseoService) {
 }
 
 export function PseoHeader() {
-  return <header className="pseo-header"><Link className="pseo-brand" href="/"><span className="pseo-brand-mark" aria-hidden="true">{String(site.number).padStart(2, '0')}</span><span><strong>{site.name}</strong><small>{site.thaiName}</small></span></Link><nav className="pseo-nav" aria-label="เมนู service"><Link href="/">หน้าแรก</Link><Link href={`/services/${pseoService.slug}`}>บริการ</Link></nav></header>;
+  return <header className="pseo-header"><Link className="pseo-brand" href="/"><span className="pseo-brand-mark" aria-hidden="true">{String(site.number).padStart(2, '0')}</span><span><strong>{site.name}</strong><small>{site.thaiName}</small></span></Link><nav className="pseo-nav" aria-label="เมนู service"><Link href="/">หน้าแรก</Link><Link href={`/services/${pseoService.slug}`}>บริการ</Link><a href={hubHref}>bookchaowalit.com</a></nav></header>;
 }
 
 export function PseoLandingPage({ service = pseoService }: { service?: PseoService }) {
